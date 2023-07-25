@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80a671ac0.js" crossorigin="anonymous"></script>
     <style>
         .poppins{
             font-family: 'Poppins', sans-serif;
@@ -25,7 +26,7 @@
         </nav>
         <!-- banner slider -->
 
-        <section class=" px-5 lg:px-0">
+        <section class="px-5 lg:px-0 mb-6 md:mb-36">
             <div class="carousel w-full h-[600px]">
                 <!-- slider-1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -82,12 +83,151 @@
             </div>
         </section>
         
-
     </header>
 
     <!-- main Section -->
-    <main>
+    <main class="max-w-screen-xl mx-auto">
+        <section class="px-5 lg:px-0">
+            <!-- timer and description -->
+            <div class="flex flex-col md:flex-row justify-between gap-16  lg:gap-40 mb-10">
+                <div class="space-y-4">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h3>
+                    <p class="text-base font-medium text-[#1f1d1d]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <div class="mt-4">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <div class="mt-4">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <div class="mt-4">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:17;"></span>
+                          </span>
+                          sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Section -->
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- fruit card-1 -->
+                <div class="card bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                      <div class="rating rating-sm">
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="card-actions">
+                        <button class="text-[#F85559] text-xl font-bold">Details</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- fruit card-2 -->
+                <div class="card bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div class="rating rating-sm">
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="card-actions">
+                        <button class="text-[#F85559] text-xl font-bold">Details</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- fruit card-3 -->
+                <div class="card bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Red Dragon</p>
+                      <div class="rating rating-sm">
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="card-actions">
+                        <button class="text-[#F85559] text-xl font-bold">Details</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- fruit card-4 -->
+                <div class="card bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Banana</p>
+                      <div class="rating rating-sm">
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="card-actions">
+                        <button class="text-[#F85559] text-xl font-bold">Details</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center mt-12">
+            <button class="btn bg-[#F85559] text-white hover:text-[#F85559] text-xl font-bold ">See All</button>
+        </div>
+
+        <!-- Meet the team section -->
+
+        <section class="px-5 lg:px-0" style="background-image: url(./images/team.png);">
+            <h3 class="text-5xl font-extrabold text-white">Meet the team section</h3>
+            <p class="text-base font-medium text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+        </section>
 
     </main>
 
